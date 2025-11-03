@@ -1,43 +1,39 @@
-Scrolling Display using 8051 Microcontroller
 
-This project implements a scrolling text display on a 16x2 LCD module using an 8051 microcontroller. It demonstrates low-level embedded programming, efficient use of timers, and direct LCD interfacing in assembly language.
+---
 
-🧠 Project Overview
+## 🔧 How It Works
 
-The goal of this project is to display a continuous scrolling message across an LCD screen. The implementation focuses on:
+1. LCD is initialized in **8-bit mode** using command instructions.  
+2. The message is stored in memory and displayed on the LCD.  
+3. A loop shifts characters left across the screen using timed delays.  
+4. When the message ends, it wraps around and repeats continuously.
 
-Understanding LCD command and data interface protocols.
+---
 
-Generating precise timing delays for smooth scrolling.
+## 📷 Simulation Preview
 
-Implementing character buffering and text shifting logic using 8051 assembly.
+*(Add a screenshot here — for example:)*  
+`![LCD Simulation](simulation_preview.png)`
 
-⚙️ Hardware Requirements
+---
 
-AT89C51 / AT89S52 (8051 family) microcontroller
+## 🧠 Learning Outcomes
 
-16x2 LCD module (HD44780 compatible)
+- Practical understanding of **LCD interfacing** with 8051  
+- Learned to generate **precise time delays** using assembly instructions  
+- Strengthened knowledge of **embedded systems timing and data flow**
 
-Crystal oscillator (11.0592 MHz recommended)
+---
 
-Resistors, capacitors, potentiometer (for contrast control)
+## 📜 License
 
-Breadboard / PCB and jumper wires
+This project is open-source and available under the **MIT License**.  
+Feel free to modify and use it for academic or personal learning purposes.
 
-🧩 Software Tools
+---
 
-Keil µVision IDE for assembly programming
+## 👤 Author
 
-Proteus Design Suite (for simulation and verification)
-
-Flash Magic / USB ASP Programmer (for hardware flashing)
-
-🚀 Features
-
-Smooth horizontal text scrolling on LCD
-
-Configurable scrolling speed through delay adjustment
-
-Modular code structure with LCD initialization and write routines
-
-Compatible with standard HD44780 16x2 LCDs
+**Niraj Umaretiya**  
+📧 [your.email@example.com]  
+🔗 [GitHub Profile](https://github.com/nirajumaretiya)
